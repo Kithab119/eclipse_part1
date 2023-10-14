@@ -1,13 +1,18 @@
 package part1;
 import java.time.LocalDate;
 
-public class StudentMember extends GeneralMember {
+public class StudentMember extends Member {
 		
 	private LocalDate expDate;
 		
 	public StudentMember(long id, String name, LocalDate expDate) {
 		super(id, name);
 		this.expDate = expDate;
+	}
+	
+	@Override
+	public int kai_hi() {
+		return isExpired() ? 1000 : 700;
 	}
 	
 	public boolean isExpired() {
