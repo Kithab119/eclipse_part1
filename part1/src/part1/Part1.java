@@ -19,4 +19,4 @@ public class Part1 {
 	
 		System.out.println("合計=" + total);
 	}
-}
+}//
