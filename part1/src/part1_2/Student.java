@@ -2,7 +2,7 @@ package part1_2;
 
 import java.time.LocalDate;
 
-public class Student extends User implements Attendable {
+public class Student extends User implements Attendable, Versionable {
 	
 	private LocalDate expDate;
 
@@ -27,5 +27,9 @@ public class Student extends User implements Attendable {
 	@Override
 	public void readAttendance() {
 		System.out.println("出席情報を読み込みました");
+	}
+	@Override
+	public String version() {
+		return "Student ver 1.0";
 	}
 }

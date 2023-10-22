@@ -1,6 +1,6 @@
 package part1_2;
 
-public class AuditingStudent extends User implements Attendable {
+public class AuditingStudent extends User implements Attendable, Versionable {
 	
 	private int subjectId;
 
@@ -20,5 +20,9 @@ public class AuditingStudent extends User implements Attendable {
 	@Override
 	public void readAttendance() {
 		System.out.println("聴講科目の出席情報を読み込みました");
+	}
+	@Override
+	public String version() {
+		return "AuditingStudent ver 1.0";
 	}
 }

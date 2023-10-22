@@ -1,6 +1,6 @@
 package part1_2;
 
-public class Teacher extends User {
+public class Teacher extends User implements Versionable {
 	
 	private String url;
 
@@ -11,5 +11,10 @@ public class Teacher extends User {
 	
 	public String getSubject() {
 		return url;
+	}
+	
+	@Override
+	public String version() {
+		return "Teacher ver 1.0";
 	}
 }
