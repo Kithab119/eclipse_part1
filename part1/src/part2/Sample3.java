@@ -5,7 +5,7 @@ import java.util.List;
 public class Sample3 {
 	
 	public static void main(String[] args) {
-		testApple( a -> a.color().equals("green") );
+		testApple( a -> a.color().equals("red") && a.weight()>=320 );
 	}
 	
 	public static void testApple(Predicate p) {
