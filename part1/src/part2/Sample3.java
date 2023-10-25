@@ -1,6 +1,7 @@
 package part2;
 
 import java.util.List;
+import java.util.function.Predicate;
 
 public class Sample3 {
 	
@@ -8,7 +9,7 @@ public class Sample3 {
 		testApple( a -> a.color().equals("red") && a.weight()>=320 );
 	}
 	
-	public static void testApple(Predicate p) {
+	public static void testApple(Predicate<Apple> p) {
 		var list = getAppleList();
 		
 		for(Apple apple : list) {
