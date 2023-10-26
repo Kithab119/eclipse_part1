@@ -7,7 +7,7 @@ public class ForEachExample {
 
 	public static void main(String[] args) {
 		var list = getAppleList();
-		list.forEach(t -> System.out.println(t));
+		list.forEach(System.out::println);
 	}
 	
 	public static List<Apple> getAppleList() {
