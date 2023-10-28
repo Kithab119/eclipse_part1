@@ -1,12 +1,12 @@
 package part2_2;
 
-import java.util.LinkedHashSet;
+import java.util.TreeSet;
 
 public class Sample1 {
 
 	public static void main(String[] args) {
 		
-		var set = new LinkedHashSet<Meibo>();
+		var set = new TreeSet<Meibo>();
 		set.add(new Meibo(100, "田中宏"));
 		set.add(new Meibo(200, "木村正一"));
 		set.add(new Meibo(100, "田中宏"));
