@@ -8,11 +8,15 @@ public class Sample13 {
 
 		var list = Book.getBookList();
 		var book_author = list.stream()
-				.collect(Collectors.groupingBy(Book::author));
+				.collect(Collectors.groupingBy(
+						Book::author,
+						Collectors.mapping(Book::title, Collectors.toList())
+						));
 		
 		book_author.forEach((k, v) -> {
 			System.out.println(k);
-			v.forEach(System.out::println);
+			String titles = v.stream().collect(Collectors.joining(","));
+			System.out.println(" " + titles);
 		});
 	}
 
