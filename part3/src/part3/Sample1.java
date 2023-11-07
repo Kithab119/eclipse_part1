@@ -9,15 +9,13 @@ public class Sample1 {
 	public static void main(String[] args) {
 
 		try {
-			Path p = Path.of("_fruit.txt");
+			Path p = Path.of("fruit.txt");
 			var list = Files.readAllLines(p);
 			list.forEach(System.out::println);
 		}
 		
 		catch (IOException e) {
-			System.out.println(e.getMessage());
-			System.out.println(e.toString());
-			e.printStackTrace();
+			System.err.println(e + "\nファイルを読み出せません");
 		}
 	}
 
