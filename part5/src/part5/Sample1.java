@@ -4,7 +4,7 @@ public class Sample1 {
 
 	public static void main(String[] args) {
 
-		Reg.test(".im", "Jim", "Tom");
+		Reg.test("[a-z]xx", "Axx", "gxx", "8xx");
 	}
 
 }
