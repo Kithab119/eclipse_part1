@@ -4,6 +4,7 @@ public class Sample1 {
 
 	public static void main(String[] args) {
 
-		Reg.test("[^PSA]xx", "Axx", "gxx", "8xx");
+		Reg.test(".*apple", "XXXapple", "XXX", "apple");
+		Reg.test(".+apple", "XXXapple", "XXX", "apple");
 	}
 }
