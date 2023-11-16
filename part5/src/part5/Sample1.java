@@ -4,7 +4,6 @@ public class Sample1 {
 
 	public static void main(String[] args) {
 
-		Reg.test(".*apple", "XXXapple", "XXX", "apple");
-		Reg.test(".+apple", "XXXapple", "XXX", "apple");
+		Reg.test("^apple.*", "appleXX", "apple", "XXappleXXX");
 	}
 }
