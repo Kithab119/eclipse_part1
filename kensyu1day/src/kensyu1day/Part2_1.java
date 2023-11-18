@@ -6,8 +6,7 @@ public class Part2_1 {
 
 		int x = 5;
 		int y = 10;
-		int a = x + y;
-		String ans = "x+yは" + a;
+		String ans = "x+yは" + (x + y);
 		System.out.println(ans);
 	}
 
