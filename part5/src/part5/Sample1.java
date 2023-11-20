@@ -4,7 +4,7 @@ public class Sample1 {
 
 	public static void main(String[] args) {
 
-		Reg.test("\\d+", "2301", "apple_#");
-		Reg.test("\\D+", "2301", "apple_#");
+		Reg.test("ap\\s+ple", "ap ple", "ap##ple");
+		Reg.test("ap\\S+ple", "ap ple", "ap##ple");
 	}
 }
