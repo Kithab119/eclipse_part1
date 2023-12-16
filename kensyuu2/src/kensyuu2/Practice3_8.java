@@ -19,7 +19,7 @@ public class Practice3_8 {
 		if (name.equals("湊"));
 		
 		//練習３−２
-		//c, d, f
+		//c, d, e
 		
 		//練習３−３
 		int isHungry = 1;
